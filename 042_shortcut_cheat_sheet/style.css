@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.category-selector {
+    margin-bottom: 2rem;
+}
+
+.category-selector button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.category-selector button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+#cheat-sheet-display {
+    text-align: left;
+}
+
+.shortcut-group {
+    margin-bottom: 1.5rem;
+    border: 1px solid #eee;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #fdfdfd;
+}
+
+.shortcut-group h3 {
+    margin-top: 0;
+    color: #555;
+}
+
+.shortcut-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.shortcut-item:last-child {
+    border-bottom: none;
+}
+
+.shortcut-item .key-combo {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.shortcut-item .description {
+    color: #666;
+}

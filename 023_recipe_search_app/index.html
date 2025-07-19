@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Search App</h1>
+        <div class="search-box">
+            <input type="text" id="search-input" placeholder="Enter a meal name (e.g., Sushi, Beef)">
+            <button id="search-btn">Search</button>
+        </div>
+        <p id="error-message"></p>
+        <div id="recipe-results"></div>
+    </div>
+
+    <!-- Recipe Detail Modal -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-recipe-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

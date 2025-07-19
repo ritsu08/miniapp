@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日付と時刻のフォーマット変換</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>日付と時刻のフォーマット変換</h1>
+        <div class="input-area">
+            <label for="datetime-input">日付と時刻:</label>
+            <input type="datetime-local" id="datetime-input">
+        </div>
+        <div class="output-area">
+            <h2>変換結果:</h2>
+            <div class="format-item">
+                <label>YYYY/MM/DD HH:mm:ss</label>
+                <input type="text" id="format1" readonly>
+            </div>
+            <div class="format-item">
+                <label>YYYY年MM月DD日 HH時mm分ss秒</label>
+                <input type="text" id="format2" readonly>
+            </div>
+            <div class="format-item">
+                <label>MM/DD/YYYY</label>
+                <input type="text" id="format3" readonly>
+            </div>
+            <div class="format-item">
+                <label>HH:mm AM/PM</label>
+                <input type="text" id="format4" readonly>
+            </div>
+            <div class="format-item">
+                <label>ISO 8601</label>
+                <input type="text" id="format5" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

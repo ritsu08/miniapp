@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>旗揚げゲーム</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>旗揚げゲーム</h1>
+        <p>指示に合わせてボタンを押そう！</p>
+        <div class="game-info">
+            <p>スコア: <span id="score">0</span></p>
+            <p>残り時間: <span id="time-left">30</span>秒</p>
+        </div>
+        <div class="instruction-display">
+            <p id="instruction-text">ゲーム開始！</p>
+        </div>
+        <div class="controls">
+            <button id="raise-btn">旗を上げる</button>
+            <button id="lower-btn">旗を下げる</button>
+        </div>
+        <button id="start-game-btn">ゲーム開始</button>
+        <p id="game-message"></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

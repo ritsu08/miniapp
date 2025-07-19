@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易アンケート/投票フォーム作成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>簡易アンケート/投票フォーム作成</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="question-input">質問:</label>
+                <input type="text" id="question-input" placeholder="質問を入力してください">
+            </div>
+            <div class="control-group">
+                <label for="question-type">質問タイプ:</label>
+                <select id="question-type">
+                    <option value="radio">単一選択 (ラジオボタン)</option>
+                    <option value="checkbox">複数選択 (チェックボックス)</option>
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="option-input">選択肢 (1行に1つ):</label>
+                <textarea id="option-input" rows="5" placeholder="選択肢1
+選択肢2
+選択肢3
+"></textarea>
+            </div>
+            <button id="add-question-btn">質問を追加</button>
+        </div>
+
+        <div class="preview-area">
+            <h2>フォームプレビュー</h2>
+            <form id="survey-form">
+                <!-- 質問と選択肢はここに動的に追加されます -->
+            </form>
+            <button id="submit-form-btn" class="hidden">回答を送信 (デモ)</button>
+        </div>
+
+        <div class="output-area">
+            <h2>生成されたHTMLコード</h2>
+            <textarea id="html-output" readonly rows="10"></textarea>
+            <button id="copy-html-btn">HTMLをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

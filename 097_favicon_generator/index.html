@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファビコン生成ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ファビコン生成ツール</h1>
+        <p class="app-description">画像をアップロードして、様々なサイズのファビコンを生成・ダウンロードできます。</p>
+
+        <div id="drop-area" class="drop-area">
+            <p>画像をここにドラッグ＆ドロップ</p>
+            <p>または</p>
+            <input type="file" id="file-input" accept="image/*">
+        </div>
+        <p id="error-message" class="error"></p>
+        
+        <!-- original-image-preview を再追加 (非表示) -->
+        <img id="original-image-preview" src="" alt="オリジナル画像" style="display: none;">
+
+        <div id="favicon-results">
+            <h2>生成されたファビコン</h2>
+            <div class="format-selection">
+                <label for="download-format">ダウンロード形式:</label>
+                <select id="download-format">
+                    <option value="image/png">PNG</option>
+                    <option value="image/webp">WebP</option>
+                </select>
+            </div>
+
+            <div id="main-favicon-preview">
+                <h3>128x128px ファビコンプレビュー</h3>
+                <img id="main-preview-img" src="" alt="メインファビコンプレビュー" style="display: none;">
+            </div>
+
+            <div id="download-buttons-grid"></div>
+            <p id="no-image-message">画像をアップロードしてください</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.input-area input {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.input-area button {
+    grid-column: 1 / -1;
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dashboard-sections {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.section {
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    text-align: left;
+}
+
+.section h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+}
+
+#product-list li {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 0.8rem;
+    margin-bottom: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product-list li .product-info h3 {
+    margin: 0 0 0.3rem 0;
+    color: #333;
+}
+
+#product-list li .product-info p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#product-list li .actions button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-left: 0.5rem;
+}
+
+#product-list li .actions .edit-btn {
+    background-color: #ffc107;
+    color: #333;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.htaccess ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>.htaccess ジェネレーター (基本的なもの)</h1>
+        <div class="controls">
+            <h2>設定項目</h2>
+            <div class="control-group">
+                <input type="checkbox" id="force-https">
+                <label for="force-https">HTTPをHTTPSに強制リダイレクト</label>
+            </div>
+            <div class="control-group">
+                <input type="checkbox" id="www-redirect">
+                <label for="www-redirect">wwwあり/なしを統一 (wwwなしへ)</label>
+            </div>
+            <div class="control-group">
+                <label for="error-404">カスタム404エラーページ:</label>
+                <input type="text" id="error-404" placeholder="例: /404.html">
+            </div>
+            <div class="control-group">
+                <label for="default-charset">デフォルト文字コード:</label>
+                <input type="text" id="default-charset" placeholder="例: UTF-8">
+            </div>
+        </div>
+        <div class="output-area">
+            <h2>生成された .htaccess コード</h2>
+            <textarea id="htaccess-code" readonly rows="10"></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

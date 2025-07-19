@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>単位変換ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>単位変換ツール</h1>
+        <div class="control-group">
+            <label for="category">カテゴリ:</label>
+            <select id="category">
+                <option value="length">長さ</option>
+                <option value="weight">重さ</option>
+                <option value="temperature">温度</option>
+            </select>
+        </div>
+
+        <div class="conversion-area">
+            <div class="input-group">
+                <input type="number" id="input-value" value="1">
+                <select id="input-unit"></select>
+            </div>
+            <span>=</span>
+            <div class="input-group">
+                <input type="text" id="output-value" readonly>
+                <select id="output-unit"></select>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

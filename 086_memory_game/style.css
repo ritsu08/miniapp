@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4x4のグリッドを想定 */
+    grid-gap: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto 2rem auto;
+}
+
+.card {
+    width: 100%;
+    height: 100px;
+    background-color: #007bff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.card .front-face,
+.card .back-face {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card .back-face {
+    transform: rotateY(180deg);
+}
+
+.card.matched {
+    background-color: #28a745;
+    cursor: default;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}

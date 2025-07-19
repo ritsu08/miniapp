@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>画像からカラーチャート生成</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>画像からカラーチャート生成</h1>
+        <p class="app-description">ランダムまたは好きな場所をクリックして色を抽出できます。</p>
+        <div id="drop-area" class="drop-area">
+            <p>画像をここにドラッグ＆ドロップ</p>
+            <p>または</p>
+            <input type="file" id="file-input" accept="image/*">
+        </div>
+        <p id="error-message" class="error"></p>
+        
+        <div id="image-display-area">
+            <img id="image-preview" src="" alt="画像プレビュー" style="display: none;">
+            <canvas id="image-canvas"></canvas>
+            <div class="button-group">
+                <button id="reset-colors-btn" class="hidden">選択をリセット</button>
+                <button id="random-colors-btn" class="hidden">ランダム5色</button>
+            </div>
+        </div>
+
+        <div id="color-chart-results">
+            <h2>抽出された色</h2>
+            <div id="color-swatches"></div>
+            <p id="no-image-message">画像をドロップしてください</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocktail Recipe Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cocktail Recipe Search</h1>
+        <div class="search-area">
+            <input type="text" id="search-input" placeholder="Enter cocktail name (e.g., Mojito, Margarita)">
+            <button id="search-btn">Search</button>
+        </div>
+        <p id="error-message" class="error"></p>
+        <div id="cocktail-results">
+            <!-- Cocktail recipes will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Cocktail Detail Modal -->
+    <div id="cocktail-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modal-cocktail-content"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

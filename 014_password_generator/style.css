@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.output-area {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+#password-output {
+    flex-grow: 1;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    background-color: #e9ecef;
+}
+
+#copy-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.controls {
+    text-align: left;
+}
+
+.control-group {
+    margin-bottom: 1rem;
+}
+
+.control-group label {
+    margin-left: 0.5rem;
+}
+
+.control-group input[type="range"] {
+    width: calc(100% - 60px);
+    vertical-align: middle;
+}
+
+#length-display {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#generate-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+}

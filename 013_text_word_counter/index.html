@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>文字数・単語数カウンター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>文字数・単語数カウンター</h1>
+        <textarea id="text-input" placeholder="ここにテキストを入力してください..."></textarea>
+        <div class="results">
+            <p>文字数 (スペース含む): <span id="char-count">0</span></p>
+            <p>文字数 (スペース含まない): <span id="char-no-space-count">0</span></p>
+            <p>単語数: <span id="word-count">0</span></p>
+            <p>行数: <span id="line-count">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

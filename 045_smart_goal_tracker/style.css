@@ -1,0 +1,102 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-area {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.input-area input {
+    flex-grow: 1;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1rem;
+}
+
+.input-area button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#goal-list {
+    list-style: none;
+    padding: 0;
+}
+
+#goal-list li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+    position: relative;
+}
+
+#goal-list li.completed {
+    background-color: #e6ffe6;
+    border-color: #aaffaa;
+}
+
+#goal-list li h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#goal-list li p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+#goal-list li .actions {
+    margin-top: 1rem;
+}
+
+#goal-list li .actions button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#goal-list li .actions .complete-btn {
+    background-color: #28a745;
+    color: white;
+}
+
+#goal-list li .actions .delete-btn {
+    background-color: #dc3545;
+    color: white;
+}

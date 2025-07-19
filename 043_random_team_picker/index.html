@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムチーム分け/抽選ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダムチーム分け/抽選ツール</h1>
+        <div class="input-area">
+            <label for="participants">参加者 (1行に1人):</label>
+            <textarea id="participants" rows="10" placeholder="例:
+田中
+佐藤
+鈴木
+高橋
+中村
+"></textarea>
+        </div>
+        <div class="control-group">
+            <label for="num-teams">チーム数:</label>
+            <input type="number" id="num-teams" value="2" min="1">
+        </div>
+        <button id="generate-teams-btn">チーム分け/抽選</button>
+        <div class="results-area">
+            <h2>結果:</h2>
+            <div id="team-results">
+                <!-- チーム分け結果はここに表示されます -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

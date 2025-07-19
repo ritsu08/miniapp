@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>タイムトラッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>タイムトラッカー</h1>
+        <div class="input-area">
+            <input type="text" id="task-name" placeholder="タスク名を入力">
+            <button id="start-btn">開始</button>
+            <button id="stop-btn" disabled>停止</button>
+        </div>
+        <div class="current-tracking">
+            <p>現在のタスク: <span id="current-task-display">なし</span></p>
+            <p>経過時間: <span id="elapsed-time-display">00:00:00</span></p>
+        </div>
+        <div class="history-area">
+            <h2>記録</h2>
+            <ul id="task-history">
+                <!-- 記録されたタスクはここに表示されます -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

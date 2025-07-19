@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テキスト比較ツール (Diffチェッカー)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>テキスト比較ツール (Diffチェッカー)</h1>
+        <div class="input-areas">
+            <div class="input-group">
+                <h2>テキスト1</h2>
+                <textarea id="text1" placeholder="最初のテキストを入力してください..."></textarea>
+            </div>
+            <div class="input-group">
+                <h2>テキスト2</h2>
+                <textarea id="text2" placeholder="比較するテキストを入力してください..."></textarea>
+            </div>
+        </div>
+        <button id="compare-btn">比較</button>
+        <div class="result-area">
+            <h2>比較結果</h2>
+            <div id="diff-output"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

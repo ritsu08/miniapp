@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box-Shadow ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Box-Shadow ジェネレーター</h1>
+        <div class="main-layout">
+            <div class="controls">
+                <h2>設定</h2>
+                <div class="control-group">
+                    <label for="h-offset">水平オフセット</label>
+                    <input type="range" id="h-offset" min="-50" max="50" value="10">
+                </div>
+                <div class="control-group">
+                    <label for="v-offset">垂直オフセット</label>
+                    <input type="range" id="v-offset" min="-50" max="50" value="10">
+                </div>
+                <div class="control-group">
+                    <label for="blur">ぼかし</label>
+                    <input type="range" id="blur" min="0" max="100" value="5">
+                </div>
+                <div class="control-group">
+                    <label for="spread">広がり</label>
+                    <input type="range" id="spread" min="-50" max="50" value="0">
+                </div>
+                <div class="control-group">
+                    <label for="color">影の色</label>
+                    <input type="color" id="color" value="#000000">
+                </div>
+                 <div class="control-group">
+                    <label for="opacity">不透明度</label>
+                    <input type="range" id="opacity" min="0" max="1" step="0.01" value="0.75">
+                </div>
+                <div class="control-group">
+                    <input type="checkbox" id="inset">
+                    <label for="inset">内側シャドウ (inset)</label>
+                </div>
+            </div>
+            <div class="preview-area">
+                <div id="preview-box"></div>
+            </div>
+        </div>
+        <div class="output-area">
+            <h2>CSSコード</h2>
+            <textarea id="css-code" readonly rows="3"></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

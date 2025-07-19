@@ -1,0 +1,63 @@
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #fdfaf6;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: white;
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border: 2px solid #e8d3b4;
+}
+
+h1 {
+    color: #5a4a3a;
+}
+
+#draw-btn {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #ff5e5e, #ffc107);
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 1.5rem;
+}
+
+#draw-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255, 94, 94, 0.4);
+}
+
+#result-container {
+    padding: 1.5rem;
+    border: 1px dashed #e8d3b4;
+    border-radius: 10px;
+    background-color: #fffcf7;
+}
+
+#result-container.hidden {
+    display: none;
+}
+
+#fortune-result {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #d9534f;
+    margin: 0.5rem 0;
+}
+
+#fortune-advice {
+    font-size: 1.1rem;
+    color: #5a4a3a;
+}

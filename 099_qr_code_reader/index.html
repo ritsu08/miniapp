@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QRコードリーダー</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>QRコードリーダー</h1>
+        <p>カメラにQRコードをかざしてください。</p>
+        <video id="video" autoplay playsinline></video>
+        <canvas id="canvas" class="hidden"></canvas>
+        <div class="output-area">
+            <h2>読み取り結果:</h2>
+            <p id="output-data"></p>
+            <p id="output-message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

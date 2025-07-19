@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日数・時間計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>日数・時間計算機</h1>
+        <div class="input-group">
+            <label for="start-datetime">開始日時:</label>
+            <input type="datetime-local" id="start-datetime">
+        </div>
+        <div class="input-group">
+            <label for="end-datetime">終了日時:</label>
+            <input type="datetime-local" id="end-datetime">
+        </div>
+        <button id="calculate-btn">計算</button>
+        <div class="result-area">
+            <h2>結果:</h2>
+            <p id="result-display"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

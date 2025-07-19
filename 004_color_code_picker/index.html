@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>カラーコードピッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>カラーコードピッカー</h1>
+        <div class="picker-container">
+            <input type="color" id="color-picker" value="#ff0000">
+        </div>
+        <div class="output-container">
+            <div class="code-box">
+                <label for="hex-code">HEX</label>
+                <input type="text" id="hex-code" readonly>
+            </div>
+            <div class="code-box">
+                <label for="rgb-code">RGB</label>
+                <input type="text" id="rgb-code" readonly>
+            </div>
+            <div class="code-box">
+                <label for="hsl-code">HSL</label>
+                <input type="text" id="hsl-code" readonly>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

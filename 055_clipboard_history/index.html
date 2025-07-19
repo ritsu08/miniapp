@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>クリップボード履歴 (簡易版)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>クリップボード履歴 (簡易版)</h1>
+        <p>テキストを下の入力欄にペーストするか、コピーボタンで履歴に追加してください。</p>
+        <div class="input-area">
+            <textarea id="clipboard-input" placeholder="ここにテキストをペーストしてください..."></textarea>
+            <button id="add-to-history-btn">履歴に追加</button>
+        </div>
+        <ul id="history-list">
+            <!-- 履歴はここに表示されます -->
+        </ul>
+        <button id="clear-history-btn">履歴をクリア</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

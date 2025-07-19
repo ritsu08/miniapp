@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ランダムディナー決定ルーレット</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ランダムディナー決定ルーレット</h1>
+        <p>今日の夕食は何にする？候補を入力してルーレットを回そう！</p>
+        <div class="input-area">
+            <label for="food-options">料理の候補 (1行に1つ):</label>
+            <textarea id="food-options" rows="8" placeholder="例:
+カレー
+パスタ
+寿司
+ラーメン
+ハンバーグ
+"></textarea>
+        </div>
+        <button id="decide-btn">今日のディナーを決定！</button>
+        <div class="result-area">
+            <h2>今日のディナーは...</h2>
+            <p id="chosen-food"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>睡眠時間計算機</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>睡眠時間計算機</h1>
+        <div class="input-area">
+            <div class="input-group">
+                <label for="bedtime">就寝時刻:</label>
+                <input type="time" id="bedtime">
+            </div>
+            <div class="input-group">
+                <label for="waketime">起床時刻:</label>
+                <input type="time" id="waketime">
+            </div>
+        </div>
+        <button id="calculate-btn">睡眠時間を計算</button>
+        <div class="result-area">
+            <h2>あなたの睡眠時間: <span id="sleep-duration">-</span></h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

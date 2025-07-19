@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑑賞・記録アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>鑑賞・記録アプリ</h1>
+
+        <div class="input-section">
+            <h2>新しい記録を追加</h2>
+            <div class="form-group">
+                <label for="record-title">タイトル:</label>
+                <input type="text" id="record-title" placeholder="記録のタイトルを入力" required>
+            </div>
+            <div class="form-group">
+                <label for="record-genre">ジャンル:</label>
+                <input type="text" id="record-genre" placeholder="例: 映画, 舞台, 読書">
+            </div>
+            <div class="form-group">
+                <label for="watched-date">日付:</label>
+                <input type="date" id="watched-date">
+            </div>
+            <div class="form-group">
+                <label for="rating">評価:</label>
+                <select id="rating">
+                    <option value="5">★★★★★</option>
+                    <option value="4">★★★★☆</option>
+                    <option value="3">★★★☆☆</option>
+                    <option value="2">★★☆☆☆</option>
+                    <option value="1">★☆☆☆☆</option>
+                    <option value="0">未評価</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="movie-review">感想・メモ:</label>
+                <textarea id="movie-review" rows="5" placeholder="感想やメモを入力"></textarea>
+            </div>
+            <button id="save-log-btn">記録する</button>
+        </div>
+
+        <div class="log-section">
+            <h2>これまでの記録</h2>
+            <div id="movie-log-list"></div>
+            <p id="no-logs-message">まだ記録がありません。</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

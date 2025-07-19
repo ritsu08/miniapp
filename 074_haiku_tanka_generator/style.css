@@ -1,0 +1,55 @@
+body {
+    font-family: 'Sawarabi Mincho', serif; /* 和風フォント */
+    background-color: #fdfaf6;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #5a4a3a;
+    margin-bottom: 1.5rem;
+}
+
+p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.controls button {
+    padding: 0.8rem 1.5rem;
+    background-color: #a0522d; /* 茶色系 */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+.result-area {
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px dashed #e8d3b4;
+}
+
+#generated-poem {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    color: #333;
+    white-space: pre-wrap; /* 改行を保持 */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コード整形・圧縮ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>コード整形・圧縮ツール</h1>
+        <div class="controls">
+            <select id="code-type">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JavaScript</option>
+            </select>
+            <button id="beautify-btn">整形 (Beautify)</button>
+            <button id="minify-btn">圧縮 (Minify)</button>
+        </div>
+        <textarea id="input-code" placeholder="ここにコードを入力してください..."></textarea>
+        <textarea id="output-code" readonly></textarea>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

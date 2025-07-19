@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-area label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+.input-area textarea {
+    width: calc(100% - 22px);
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: vertical;
+    margin-bottom: 1.5rem;
+}
+
+.control-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.control-group input[type="number"] {
+    width: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.results-area h2 {
+    text-align: left;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.team {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.team h3 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.team ul li {
+    padding: 0.3rem 0;
+    border-bottom: 1px dashed #eee;
+}
+
+.team ul li:last-child {
+    border-bottom: none;
+}

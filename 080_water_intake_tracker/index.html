@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水分摂取トラッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>水分摂取トラッカー</h1>
+        <div class="goal-setting">
+            <label for="daily-goal">今日の目標 (ml):</label>
+            <input type="number" id="daily-goal" value="2000" min="100">
+            <button id="set-goal-btn">目標設定</button>
+        </div>
+        <div class="progress-display">
+            <p>現在の摂取量: <span id="current-intake">0</span> ml</p>
+            <p>目標まで残り: <span id="remaining-intake">2000</span> ml</p>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="number" id="intake-amount" placeholder="摂取量 (ml)" value="200" min="1">
+            <button id="add-intake-btn">追加</button>
+        </div>
+        <button id="reset-daily-btn">今日の記録をリセット</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

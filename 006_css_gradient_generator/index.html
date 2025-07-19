@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Gradient ジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSS Gradient ジェネレーター</h1>
+        <div class="main-layout">
+            <div class="controls">
+                <h2>設定</h2>
+                <div class="control-group">
+                    <label for="color1">色1</label>
+                    <input type="color" id="color1" value="#ff0000">
+                </div>
+                <div class="control-group">
+                    <label for="color2">色2</label>
+                    <input type="color" id="color2" value="#0000ff">
+                </div>
+                <div class="control-group">
+                    <label for="angle">角度</label>
+                    <input type="range" id="angle" min="0" max="360" value="90">
+                </div>
+            </div>
+            <div class="preview-area">
+                <div id="preview-box"></div>
+            </div>
+        </div>
+        <div class="output-area">
+            <h2>CSSコード</h2>
+            <textarea id="css-code" readonly rows="3"></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

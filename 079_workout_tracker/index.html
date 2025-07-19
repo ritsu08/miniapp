@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>筋トレ記録アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>筋トレ記録アプリ</h1>
+        <div class="input-area">
+            <input type="date" id="workout-date">
+            <input type="text" id="exercise-name" placeholder="種目名 (例: ベンチプレス)">
+            <input type="number" id="sets" placeholder="セット数" min="1">
+            <input type="number" id="reps" placeholder="回数" min="1">
+            <input type="number" id="weight" placeholder="重量 (kg)" min="0">
+            <button id="add-record-btn">記録を追加</button>
+        </div>
+        <div class="history-area">
+            <h2>記録履歴</h2>
+            <ul id="workout-history">
+                <!-- 記録はここに表示されます -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

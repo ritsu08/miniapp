@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Googleフォント プレビューア</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Googleフォント プレビューア</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="font-select">フォントを選択:</label>
+                <select id="font-select">
+                    <!-- Options will be loaded by JavaScript -->
+                </select>
+            </div>
+            <div class="control-group">
+                <label for="font-size">フォントサイズ (px):</label>
+                <input type="number" id="font-size" value="32" min="10">
+            </div>
+            <div class="control-group">
+                <label for="preview-text">プレビューテキスト:</label>
+                <textarea id="preview-text" rows="3">Hello World! こんにちは世界！</textarea>
+            </div>
+        </div>
+        <div class="preview-area">
+            <p id="font-preview"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

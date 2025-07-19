@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易家計簿アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>簡易家計簿アプリ</h1>
+        <div class="balance-display">
+            <h2>現在の残高: <span id="balance">0</span>円</h2>
+        </div>
+        <div class="input-area">
+            <input type="text" id="description" placeholder="説明 (例: 食費)">
+            <input type="number" id="amount" placeholder="金額 (例: -500, 1000)">
+            <button id="add-transaction-btn">追加</button>
+        </div>
+        <div class="history-area">
+            <h2>履歴</h2>
+            <ul id="transaction-list">
+                <!-- 取引履歴はここに表示されます -->
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

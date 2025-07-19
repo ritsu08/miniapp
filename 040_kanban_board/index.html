@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡易プロジェクト管理ボード (カンバン風)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>簡易プロジェクト管理ボード</h1>
+        <div class="board">
+            <div class="column" id="todo-column">
+                <h2>ToDo</h2>
+                <div class="cards" id="todo-cards">
+                    <!-- ToDoカードはここに表示されます -->
+                </div>
+                <button class="add-card-btn" data-column="todo">+ カードを追加</button>
+            </div>
+            <div class="column" id="in-progress-column">
+                <h2>進行中</h2>
+                <div class="cards" id="in-progress-cards">
+                    <!-- 進行中カードはここに表示されます -->
+                </div>
+                <button class="add-card-btn" data-column="in-progress">+ カードを追加</button>
+            </div>
+            <div class="column" id="done-column">
+                <h2>完了</h2>
+                <div class="cards" id="done-cards">
+                    <!-- 完了カードはここに表示されます -->
+                </div>
+                <button class="add-card-btn" data-column="done">+ カードを追加</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

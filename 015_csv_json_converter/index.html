@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV ⇔ JSON コンバーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CSV ⇔ JSON コンバーター</h1>
+        <div class="converter-area">
+            <div class="input-section">
+                <h2>CSV入力</h2>
+                <div id="csv-drop-area" class="drop-area">
+                    <p>ここにCSVファイルをドラッグ＆ドロップ<br>または</p>
+                    <input type="file" id="csv-file-input" accept=".csv">
+                </div>
+                <textarea id="csv-input" placeholder="CSVデータがここに表示されます..."></textarea>
+                <div class="button-group">
+                    <button id="csv-to-json-btn">CSV → JSON 変換</button>
+                    <button id="download-json-btn" class="download-btn">JSONをダウンロード</button>
+                </div>
+            </div>
+            <div class="input-section">
+                <h2>JSON入力</h2>
+                <div id="json-drop-area" class="drop-area">
+                    <p>ここにJSONファイルをドラッグ＆ドロップ<br>または</p>
+                    <input type="file" id="json-file-input" accept=".json">
+                </div>
+                <textarea id="json-input" placeholder="JSONデータがここに表示されます..."></textarea>
+                <div class="button-group">
+                    <button id="json-to-csv-btn">JSON → CSV 変換</button>
+                    <button id="download-csv-btn" class="download-btn">CSVをダウンロード</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

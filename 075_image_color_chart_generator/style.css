@@ -1,0 +1,164 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* 上部に寄せる */
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.app-description {
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+}
+
+.drop-area {
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+}
+
+.drop-area.dragover {
+    background-color: #e0e0e0;
+}
+
+.drop-area p {
+    margin: 0;
+    color: #666;
+}
+
+.drop-area input[type="file"] {
+    display: none; /* ファイル選択ボタンを非表示にし、ラベルでクリックを促す */
+}
+
+#image-display-area {
+    margin-bottom: 20px;
+    display: flex; /* Flexboxを使用 */
+    flex-direction: column; /* 縦並び */
+    align-items: center; /* 中央揃え */
+    max-width: 100%; /* 親要素の幅に合わせる */
+    overflow: hidden; /* はみ出しを隠す */
+    margin: 0 auto; /* image-display-area自体を中央揃えにする */
+}
+
+#image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none; /* 画像はcanvasに描画するため非表示 */
+}
+
+#image-canvas {
+    max-width: 100%;
+    height: auto;
+    cursor: crosshair; /* クリックできることを示す */
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* image-previewから移動 */
+    display: block; /* ブロック要素として振る舞う */
+    margin: 0 auto; /* canvas自体を中央揃えにする */
+}
+
+.button-group {
+    display: flex;
+    gap: 10px; /* ボタン間のスペース */
+    margin-top: 15px;
+}
+
+#reset-colors-btn,
+#random-colors-btn {
+    padding: 0.8rem 1.5rem;
+    background-color: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    flex: 1; /* ボタンが均等な幅になるように */
+}
+
+#random-colors-btn {
+    background-color: #28a745; /* ランダムボタンの色 */
+}
+
+#random-colors-btn:hover {
+    background-color: #218838;
+}
+
+#reset-colors-btn:hover {
+    background-color: #5a6268;
+}
+
+.hidden {
+    display: none;
+}
+
+#color-chart-results h2 {
+    color: #555;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#color-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+.color-swatch {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.color-swatch:hover {
+    transform: scale(1.05);
+}
+
+.error {
+    color: red;
+    margin-top: 1rem;
+}
+
+#no-image-message {
+    color: #888;
+    font-style: italic;
+    margin-top: 20px;
+}

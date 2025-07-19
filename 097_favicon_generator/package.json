@@ -1,0 +1,18 @@
+{
+  "name": "blog-system",
+  "version": "1.0.0",
+  "description": "A simple blog system with authentication using Node.js, Express, and file-based storage.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}

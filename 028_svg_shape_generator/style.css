@@ -1,0 +1,100 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.main-layout {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.controls {
+    flex: 1;
+}
+
+.control-group {
+    margin-bottom: 1rem;
+}
+
+.control-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.control-group input[type="number"],
+.control-group input[type="text"],
+.control-group select {
+    width: calc(100% - 22px);
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.control-group input[type="color"] {
+    width: 50px;
+    height: 30px;
+    border: none;
+    padding: 0;
+}
+
+.shape-controls {
+    margin-top: 1rem;
+    border: 1px dashed #eee;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.shape-controls.hidden {
+    display: none;
+}
+
+.preview-area {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #eee;
+}
+
+#svg-preview {
+    border: 1px solid #ccc;
+    background-color: white;
+}
+
+.output-area textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.output-area button {
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}

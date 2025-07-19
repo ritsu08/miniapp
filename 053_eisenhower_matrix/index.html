@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アイゼンハワー・マトリクス</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>アイゼンハワー・マトリクス</h1>
+        <div class="input-area">
+            <input type="text" id="task-input" placeholder="新しいタスクを入力">
+            <button id="add-task-btn">追加</button>
+        </div>
+        <div class="matrix-grid">
+            <div class="quadrant" id="do-quadrant">
+                <h2>重要 & 緊急 (Do)</h2>
+                <ul class="task-list" data-quadrant="do">
+                    <!-- タスクはここに表示されます -->
+                </ul>
+            </div>
+            <div class="quadrant" id="decide-quadrant">
+                <h2>重要 & 緊急でない (Decide)</h2>
+                <ul class="task-list" data-quadrant="decide">
+                    <!-- タスクはここに表示されます -->
+                </ul>
+            </div>
+            <div class="quadrant" id="delegate-quadrant">
+                <h2>重要でない & 緊急 (Delegate)</h2>
+                <ul class="task-list" data-quadrant="delegate">
+                    <!-- タスクはここに表示されます -->
+                </ul>
+            </div>
+            <div class="quadrant" id="delete-quadrant">
+                <h2>重要でない & 緊急でない (Delete)</h2>
+                <ul class="task-list" data-quadrant="delete">
+                    <!-- タスクはここに表示されます -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

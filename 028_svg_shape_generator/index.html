@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGシェイプジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVGシェイプジェネレーター</h1>
+        <div class="main-layout">
+            <div class="controls">
+                <h2>設定</h2>
+                <div class="control-group">
+                    <label for="shape-type">シェイプタイプ:</label>
+                    <select id="shape-type">
+                        <option value="rect">四角形</option>
+                        <option value="circle">円</option>
+                        <option value="ellipse">楕円</option>
+                        <option value="line">線</option>
+                        <option value="polygon">多角形</option>
+                    </select>
+                </div>
+
+                <div id="rect-controls" class="shape-controls">
+                    <label for="rect-width">幅:</label><input type="number" id="rect-width" value="100" min="10">
+                    <label for="rect-height">高さ:</label><input type="number" id="rect-height" value="100" min="10">
+                    <label for="rect-rx">角丸 (rx):</label><input type="number" id="rect-rx" value="0" min="0">
+                    <label for="rect-ry">角丸 (ry):</label><input type="number" id="rect-ry" value="0" min="0">
+                </div>
+
+                <div id="circle-controls" class="shape-controls hidden">
+                    <label for="circle-r">半径:</label><input type="number" id="circle-r" value="50" min="10">
+                </div>
+
+                <div id="ellipse-controls" class="shape-controls hidden">
+                    <label for="ellipse-rx">横半径:</label><input type="number" id="ellipse-rx" value="60" min="10">
+                    <label for="ellipse-ry">縦半径:</label><input type="number" id="ellipse-ry" value="40" min="10">
+                </div>
+
+                <div id="line-controls" class="shape-controls hidden">
+                    <label for="line-x1">x1:</label><input type="number" id="line-x1" value="10" min="0">
+                    <label for="line-y1">y1:</label><input type="number" id="line-y1" value="10" min="0">
+                    <label for="line-x2">x2:</label><input type="number" id="line-x2" value="90" min="0">
+                    <label for="line-y2">y2:</label><input type="number" id="line-y2" value="90" min="0">
+                </div>
+
+                <div id="polygon-controls" class="shape-controls hidden">
+                    <label for="polygon-points">点 (x1,y1 x2,y2...):</label>
+                    <input type="text" id="polygon-points" value="50,10 90,90 10,90">
+                </div>
+
+                <div class="control-group">
+                    <label for="fill-color">塗りつぶし色:</label>
+                    <input type="color" id="fill-color" value="#007bff">
+                </div>
+                <div class="control-group">
+                    <label for="stroke-color">線の色:</label>
+                    <input type="color" id="stroke-color" value="#000000">
+                </div>
+                <div class="control-group">
+                    <label for="stroke-width">線の太さ:</label>
+                    <input type="number" id="stroke-width" value="1" min="0">
+                </div>
+            </div>
+            <div class="preview-area">
+                <svg id="svg-preview" width="200" height="200" viewBox="0 0 100 100">
+                    <!-- SVG shape will be rendered here -->
+                </svg>
+            </div>
+        </div>
+        <div class="output-area">
+            <h2>SVGコード</h2>
+            <textarea id="svg-code" readonly rows="5"></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

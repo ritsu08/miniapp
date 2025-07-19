@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>議事録テンプレートジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>議事録テンプレートジェネレーター</h1>
+        <div class="controls">
+            <div class="control-group">
+                <label for="meeting-title">会議タイトル:</label>
+                <input type="text" id="meeting-title" placeholder="例: 週次進捗会議">
+            </div>
+            <div class="control-group">
+                <label for="meeting-date">日付:</label>
+                <input type="date" id="meeting-date">
+            </div>
+            <div class="control-group">
+                <label for="meeting-time">時間:</label>
+                <input type="time" id="meeting-time">
+            </div>
+            <div class="control-group">
+                <label for="attendees">参加者 (カンマ区切り):</label>
+                <input type="text" id="attendees" placeholder="例: 田中, 佐藤, 鈴木">
+            </div>
+            <div class="control-group">
+                <label for="agenda-items">議題 (1行に1つ):</label>
+                <textarea id="agenda-items" rows="5" placeholder="例:
+プロジェクトAの進捗
+来週のタスク確認
+懸案事項
+"></textarea>
+            </div>
+            <button id="generate-btn">テンプレート生成</button>
+        </div>
+        <div class="output-area">
+            <h2>生成された議事録テンプレート</h2>
+            <textarea id="minutes-template" readonly rows="20"></textarea>
+            <button id="copy-btn">コピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

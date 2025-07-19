@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>強力なパスワードジェネレーター</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>強力なパスワードジェネレーター</h1>
+        <div class="output-area">
+            <input type="text" id="password-output" readonly>
+            <button id="copy-btn">コピー</button>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="password-length">パスワードの長さ:</label>
+                <input type="range" id="password-length" min="8" max="32" value="12">
+                <span id="length-display">12</span>
+            </div>
+            <div class="control-group">
+                <input type="checkbox" id="include-uppercase" checked>
+                <label for="include-uppercase">大文字 (A-Z)</label>
+            </div>
+            <div class="control-group">
+                <input type="checkbox" id="include-lowercase" checked>
+                <label for="include-lowercase">小文字 (a-z)</label>
+            </div>
+            <div class="control-group">
+                <input type="checkbox" id="include-numbers" checked>
+                <label for="include-numbers">数字 (0-9)</label>
+            </div>
+            <div class="control-group">
+                <input type="checkbox" id="include-symbols">
+                <label for="include-symbols">記号 (!@#$)</label>
+            </div>
+            <button id="generate-btn">パスワードを生成</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

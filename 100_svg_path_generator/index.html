@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVGパス生成ツール</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SVGパス生成ツール</h1>
+        <p class="app-description">キャンバスに図形を描画して、対応するSVGパスコードを生成します。</p>
+
+        <div class="controls">
+            <button id="clear-canvas-btn">キャンバスをクリア</button>
+            <select id="shape-select">
+                <option value="line">直線</option>
+                <option value="rect">四角形</option>
+                <option value="circle">円</option>
+            </select>
+        </div>
+
+        <div class="canvas-area">
+            <svg id="svg-canvas" width="400" height="300" viewBox="0 0 400 300">
+                <!-- 描画された図形がここに追加されます -->
+            </svg>
+        </div>
+
+        <div class="output-svg">
+            <h2>生成されたSVGパスコード</h2>
+            <textarea id="svg-output" readonly rows="10"></textarea>
+            <button id="copy-svg-btn">SVGをコピー</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ファイル名一括リネームプレビュー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ファイル名一括リネームプレビュー</h1>
+        <div class="input-area">
+            <label for="filenames">ファイル名リスト (1行に1つ):</label>
+            <textarea id="filenames" rows="10" placeholder="例:
+image_001.jpg
+image_002.jpg
+photo_003.png
+"></textarea>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="search-string">検索文字列:</label>
+                <input type="text" id="search-string" placeholder="例: image">
+            </div>
+            <div class="control-group">
+                <label for="replace-string">置換文字列:</label>
+                <input type="text" id="replace-string" placeholder="例: photo">
+            </div>
+            <button id="preview-btn">プレビュー</button>
+        </div>
+        <div class="output-area">
+            <h2>リネームプレビュー</h2>
+            <textarea id="preview-output" readonly rows="10"></textarea>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

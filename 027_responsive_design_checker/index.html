@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レスポンシブデザインチェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>レスポンシブデザインチェッカー</h1>
+        <div class="input-area">
+            <input type="url" id="url-input" placeholder="チェックしたいURLを入力してください" value="https://www.google.com">
+            <button id="load-url-btn">表示</button>
+        </div>
+        <div class="device-selector">
+            <button data-width="320" data-height="568">iPhone SE</button>
+            <button data-width="375" data-height="667">iPhone 8</button>
+            <button data-width="414" data-height="896">iPhone XR</button>
+            <button data-width="768" data-height="1024">iPad</button>
+            <button data-width="1024" data-height="768">iPad 横</button>
+            <button data-width="1366" data-height="768">ノートPC</button>
+            <button id="custom-size-btn">カスタムサイズ</button>
+            <input type="number" id="custom-width" placeholder="幅" min="100">
+            <input type="number" id="custom-height" placeholder="高さ" min="100">
+        </div>
+        <div class="iframe-container">
+            <iframe id="responsive-iframe" src="" frameborder="0"></iframe>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.input-area {
+    margin-bottom: 1.5rem;
+}
+
+.input-area label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.input-area input[type="number"] {
+    width: 100px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.timer-display {
+    font-size: 5rem;
+    font-weight: bold;
+    margin: 2rem 0;
+    color: #007bff;
+}
+
+.controls button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.controls button:hover {
+    background-color: #0056b3;
+}
+
+#pause-btn {
+    background-color: #ffc107;
+    color: #333;
+}
+
+#pause-btn:hover {
+    background-color: #e0a800;
+}
+
+#reset-btn {
+    background-color: #dc3545;
+}
+
+#reset-btn:hover {
+    background-color: #c82333;
+}

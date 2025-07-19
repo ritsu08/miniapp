@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハングマン</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ハングマン</h1>
+        <p>隠された単語を当てよう！</p>
+        <div class="word-display" id="word-display"></div>
+        <p>間違えた回数: <span id="wrong-guesses">0</span> / 6</p>
+        <div class="guess-input-area">
+            <input type="text" id="guess-letter-input" maxlength="1" placeholder="1文字入力">
+            <button id="guess-btn">予想</button>
+        </div>
+        <p id="message"></p>
+        <button id="reset-game-btn">新しいゲーム</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
